@@ -12,7 +12,7 @@ function Compartment(props) {
   }
   return (
     <div className="compartment">
-      <h3>{name}</h3>
+      <h2>{name}</h2>
       <BooksList books={props.books}/>
     </div>
   );

@@ -8,5 +8,66 @@
 }
 
 .book {
-  margin: 20px;
+  margin: 30px;
+  width: 130px;
+}
+
+.book-top {
+  width: 128px;
+  height: 193px;
+  padding: 0px;
+  position: relative;
+}
+
+.book-cover {
+  width: 100%;
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  -webkit-box-shadow: 0px 2px 11px 0px rgba(0,0,0,0.66);
+  -moz-box-shadow: 0px 2px 11px 0px rgba(0,0,0,0.66);
+  box-shadow: 0px 2px 11px 0px rgba(0,0,0,0.66);
+  background: #eee;
+}
+
+.book-shelf-changer {
+  position: absolute;
+  right: -10px;
+  bottom: -10px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: #79b6d6;
+  background-image: url('../icons/arrow-drop-down.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 20px;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}
+
+.book-shelf-changer:hover {
+  background: steelblue;
+  background-image: url('../icons/arrow-drop-down.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 20px;
+}
+
+.book-shelf-changer select {
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.book-title,
+.book-authors {
+  font-size: 0.8em;
+  text-align: center;
+}
+.book-title {
+  margin-top: 10px;
+}
+.book-authors {
+  color: #999;
 }
