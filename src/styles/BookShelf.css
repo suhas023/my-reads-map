@@ -1,0 +1,15 @@
+header {
+  background-color: #20232a;
+  padding: 10px;
+}
+
+header h1 {
+  margin: 0px;
+  color: #79b6d6;
+  display: inline;
+  cursor: pointer;
+}
+
+header h1:hover {
+  color: #61dafb;
+}
