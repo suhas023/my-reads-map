@@ -1,0 +1,12 @@
+.books-list {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.book {
+  margin: 20px;
+}
