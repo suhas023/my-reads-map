@@ -1,0 +1,10 @@
+.compartment {
+  padding: 30px;
+  text-align: left;
+  border: 2px dotted gray;
+}
+
+.compartment > h3 {
+  display: inline;
+  border-bottom: solid gray;
+}
