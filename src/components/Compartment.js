@@ -13,7 +13,7 @@ function Compartment(props) {
   return (
     <div className="compartment">
       <h2>{name}</h2>
-      <BooksList books={props.books}/>
+      <BooksList books={props.books} changeShelf={props.changeShelf} />
     </div>
   );
 }

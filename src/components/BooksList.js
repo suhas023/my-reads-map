@@ -4,27 +4,41 @@ import '../styles/BooksList.css';
 function BooksList(props) {
   return (
     <ul className="books-list">
-      {props.books.map(book => <li key={book.id}><Book book={book} /></li>)}
+      {
+        props.books.map(book => 
+          <li key={book.id}>
+            <Book 
+              book={book} 
+              changeShelf={props.changeShelf}
+            />
+          </li>
+        )
+      }
     </ul>
   );
 }
 
 function Book(props) {
-  console.log(props.book);
   return (
     <div className="book">
       <div className="book-top">
         <div 
           className="book-cover"
-          style={{backgroundImage: `url(${props.book.imageLinks.thumbnail})`}}
+          style={{backgroundImage: `url(${props.book.imageLinks.thumbnail})`,
+            backgroundPosition: 'center',
+            backgroundSize: 'cover',
+            backgroundRepeat: 'noRepeat',}}
         >
         </div>
         <div className="book-shelf-changer">
-          <select>
+          <select 
+            onChange={(e) => props.changeShelf(props.book, e.target.value)}
+            defaultValue={props.book.shelf || 'none'}
+          >
             <option value="move" disabled>Move to...</option>
-            <option value="currentlyReading" selected={props.book.shelf === 'currentlyReading'}>Currently     Reading</option>
-            <option value="wantToRead" selected={props.book.shelf === 'wantToRead'}>Want to Read</option>
-            <option value="read" selected={props.book.shelf === 'read'}>Read</option>
+            <option value="currentlyReading">Currently Reading</option>
+            <option value="wantToRead">Want to Read</option>
+            <option value="read">Read</option>
             <option value="none">None</option>
           </select>
         </div>

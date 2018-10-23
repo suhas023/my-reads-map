@@ -15,9 +15,13 @@ function BookShelf(props) {
               key={shelf}
               name={shelf}
               books={props[shelf]}
+              changeShelf={props.changeShelf}
             />)
           )
         }
+      </div>
+      <div className="open-search">
+          <a onClick={() => this.setState({ showSearchPage: true })}>Add a book</a>
       </div>
     </div>
   );
