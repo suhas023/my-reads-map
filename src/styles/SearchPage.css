@@ -1,0 +1,30 @@
+.search-page {
+  width: 100%;
+  margin: 0px;
+  padding: 0px;
+}
+
+.search-bar {
+  width: 100%;
+  padding: 10px;
+  display: flex;
+  flex-direction: row;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 0 6px rgba(0,0,0,0.23);
+}
+
+.search-bar input {
+  flex: 1;
+  padding: 15px 10px;
+  font-size: 1.25em;
+  border: none;
+  outline: none;
+}
+
+.close-search {
+  width: 50px;
+  background: white;
+  background-image: url('../icons/arrow-back.svg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 28px;
+}

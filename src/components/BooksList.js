@@ -24,7 +24,7 @@ function Book(props) {
       <div className="book-top">
         <div 
           className="book-cover"
-          style={{backgroundImage: `url(${props.book.imageLinks.thumbnail})`,
+          style={{backgroundImage: `url(${props.book.imageLinks && props.book.imageLinks.thumbnail})`,
             backgroundPosition: 'center',
             backgroundSize: 'cover',
             backgroundRepeat: 'noRepeat',}}

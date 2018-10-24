@@ -8,12 +8,12 @@ import './App.css';
 class App extends Component {
   
   state = {
-    allBooks : [],
     currentlyReading: [],
     wantToRead: [],
     read: []
   }
 
+  //Valid shelfs a book can be placed under.
   validShelfs = ['currentlyReading', 'wantToRead', 'read'];
 
   componentDidMount() {
@@ -24,10 +24,11 @@ class App extends Component {
         wantToRead: [],
         read: []
       };
-      this.setState({allBooks: books});
+      //Add each book to corresponding shelf.
       books.forEach(book => {
         shelfs[book.shelf].push(book);
       });
+      //Update each shelf in the component state.
       for(let shelf in shelfs) {
         this.setState({[shelf]: shelfs[shelf]})
       }
@@ -35,11 +36,13 @@ class App extends Component {
   }
 
   changeShelf = (book, shelf) => {
+    //If book was already in shelf, remove from old shelf.
     if(book.shelf) {
       let removeFromOldShelf = this.state[book.shelf].filter(b => b.id !== book.id);
       this.setState({[book.shelf]: removeFromOldShelf});
     }
 
+    //If book's new shelf exists, add to new shelf.
     if(shelf !== 'none') {
       book.shelf = shelf;
       let addToNewShelf = [...this.state[shelf], book];
@@ -47,6 +50,15 @@ class App extends Component {
     }
 
     bookAPi.update(book, shelf);
+  }
+
+  //Get object containing shelf and corresponding books IDs.
+  getBooksID = () => {
+    let booksID = {};
+    this.validShelfs.forEach(shelf => {
+      booksID[shelf] = this.state[shelf].map(book => book.id);
+    });
+    return booksID;
   }
 
   render() {
@@ -73,6 +85,7 @@ class App extends Component {
             <SearchPage
               {...props}
               changeShelf={this.changeShelf}
+              booksID={this.getBooksID()}
             />
           }
         />

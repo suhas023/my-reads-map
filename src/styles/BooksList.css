@@ -1,4 +1,5 @@
 .books-list {
+  padding: 0px;
   list-style: none;
   display: flex;
   flex-direction: row;
@@ -60,9 +61,17 @@
   font-size: 0.8em;
   text-align: center;
 }
+
 .book-title {
   margin-top: 10px;
 }
+
 .book-authors {
   color: #999;
+}
+
+@media screen and (max-width: 690px) {
+  .books-list {
+    justify-content: center;
+  }
 }

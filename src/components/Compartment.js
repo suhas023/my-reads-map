@@ -8,7 +8,7 @@ function Compartment(props) {
     case 'currentlyReading': name = 'Currently Reading'; break;
     case 'wantToRead': name = 'Want To Read'; break;
     case 'read': name = 'Read'; break;
-    default: name = '--';
+    default: name = props.name;
   }
   return (
     <div className="compartment">
