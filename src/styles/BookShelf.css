@@ -35,3 +35,8 @@ header h1:hover {
   font-size: 0;
   cursor: pointer;
 }
+
+
+.open-search a:hover {
+  background-color: #2a5d86;
+}
