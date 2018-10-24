@@ -50,6 +50,7 @@ class SearchPage extends Component {
     });
   }
 
+  //Move the book between the search cmpartments, when the book is added or removed from shelf
   changeShelf = (book, newShelf) => {
     if(book.inShelf === true && newShelf === 'none') {
       book.inShelf = false;
@@ -60,7 +61,7 @@ class SearchPage extends Component {
       let removeFromOldShelf = this.state['newBooks'].filter(b => b.id !== book.id);
       this.setState({shelfBooks: [...this.state.shelfBooks, book] , newBooks: removeFromOldShelf});
     }
-
+    
     this.props.changeShelf(book, newShelf);
   }
 
