@@ -1,7 +1,7 @@
 import React from 'react';
-import Compartment from './Compartment';
+import Compartment from '../compartment/Compartment';
 import { Link } from 'react-router-dom';
-import '../styles/BookShelf.css';
+import './BookShelf.css';
 
 function BookShelf(props) {
   let shelfs = props.shelfs;

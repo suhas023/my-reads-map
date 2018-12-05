@@ -37,7 +37,7 @@
   height: 40px;
   border-radius: 50%;
   background: #79b6d6;
-  background-image: url('../icons/arrow-drop-down.svg');
+  background-image: url('../../icons/arrow-drop-down.svg');
   background-repeat: no-repeat;
   background-position: center;
   background-size: 20px;
@@ -46,7 +46,6 @@
 
 .book-shelf-changer:hover {
   background-color: #4682b4;
-  background-image: url('../icons/arrow-drop-down.svg');
 }
 
 .book-shelf-changer select {

@@ -1,6 +1,6 @@
 import React from 'react';
-import BooksList from './BooksList';
-import '../styles/Compartment.css';
+import BooksList from '../booklist/BooksList';
+import './Compartment.css';
 
 function Compartment(props) {
   let name;

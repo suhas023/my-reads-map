@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
-import Compartment from './Compartment';
+import Compartment from '../compartment/Compartment';
 import { Link } from 'react-router-dom';
 import escapeRegExp from 'escape-string-regexp';
-import * as bookAPI from '../api/BooksAPI';
-import '../styles/SearchPage.css';
+import * as bookAPI from '../../api/BooksAPI';
+import './SearchPage.css';
 
 class SearchPage extends Component {
   state = {

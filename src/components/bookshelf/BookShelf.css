@@ -27,7 +27,7 @@ header h1:hover {
   height: 50px;
   border-radius: 50%;
   background: #4682b4;
-  background-image: url('../icons/add.svg');
+  background-image: url('../../icons/add.svg');
   background-repeat: no-repeat;
   background-position: center;
   background-size: 28px;

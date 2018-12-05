@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import BookShelf from './components/BookShelf';
-import SearchPage from './components/SearchPage';
+import BookShelf from './components/bookshelf/BookShelf';
+import SearchPage from './components/searchpage/SearchPage';
 import { Route } from 'react-router-dom';
 import * as bookAPi from './api/BooksAPI';
 import './App.css';
@@ -53,12 +53,12 @@ class App extends Component {
   }
 
   //Get object containing shelf and corresponding books IDs.
-  getBooksID = () => {
-    let booksID = {};
+  getBookIDs = () => {
+    let bookIDs = {};
     this.validShelfs.forEach(shelf => {
-      booksID[shelf] = this.state[shelf].map(book => book.id);
+      bookIDs[shelf] = this.state[shelf].map(book => book.id);
     });
-    return booksID;
+    return bookIDs;
   }
 
   render() {
@@ -85,7 +85,7 @@ class App extends Component {
             <SearchPage
               {...props}
               changeShelf={this.changeShelf}
-              booksID={this.getBooksID()}
+              bookIDs={this.getBookIDs()}
             />
           }
         />

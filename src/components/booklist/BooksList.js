@@ -1,5 +1,5 @@
 import React from 'react';
-import '../styles/BooksList.css';
+import './BooksList.css';
 
 function BooksList(props) {
   return (
@@ -24,10 +24,13 @@ function Book(props) {
       <div className="book-top">
         <div 
           className="book-cover"
-          style={{backgroundImage: `url(${props.book.imageLinks && props.book.imageLinks.thumbnail})`,
+          style={{
+            backgroundImage: `url(${props.book.imageLinks && 
+              props.book.imageLinks.thumbnail})`,
             backgroundPosition: 'center',
             backgroundSize: 'cover',
-            backgroundRepeat: 'noRepeat',}}
+            backgroundRepeat: 'noRepeat',
+          }}
         >
         </div>
         <div className="book-shelf-changer">

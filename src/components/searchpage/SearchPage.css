@@ -23,7 +23,7 @@
 .close-search {
   width: 50px;
   background: white;
-  background-image: url('../icons/arrow-back.svg');
+  background-image: url('../../icons/arrow-back.svg');
   background-position: center;
   background-repeat: no-repeat;
   background-size: 28px;
