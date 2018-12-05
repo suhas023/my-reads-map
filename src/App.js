@@ -1,12 +1,13 @@
 import React, { Component } from 'react';
 import BookShelf from './components/bookshelf/BookShelf';
 import SearchPage from './components/searchpage/SearchPage';
+import NeighbourhoodLibraries from './components/neighbourhood-libraries/NeighbourhoodLibraries';
 import { Route } from 'react-router-dom';
 import * as bookAPi from './api/BooksAPI';
 import './App.css';
 
 class App extends Component {
-  
+
   state = {
     currentlyReading: [],
     wantToRead: [],
@@ -18,35 +19,35 @@ class App extends Component {
 
   componentDidMount() {
     bookAPi.getAll()
-    .then(books => {
-      let shelfs = {
-        currentlyReading: [],
-        wantToRead: [],
-        read: []
-      };
-      //Add each book to corresponding shelf.
-      books.forEach(book => {
-        shelfs[book.shelf].push(book);
+      .then(books => {
+        let shelfs = {
+          currentlyReading: [],
+          wantToRead: [],
+          read: []
+        };
+        //Add each book to corresponding shelf.
+        books.forEach(book => {
+          shelfs[book.shelf].push(book);
+        });
+        //Update each shelf in the component state.
+        for (let shelf in shelfs) {
+          this.setState({ [shelf]: shelfs[shelf] })
+        }
       });
-      //Update each shelf in the component state.
-      for(let shelf in shelfs) {
-        this.setState({[shelf]: shelfs[shelf]})
-      }
-    });
   }
 
   changeShelf = (book, shelf) => {
     //If book was already in shelf, remove from old shelf.
-    if(book.shelf) {
+    if (book.shelf) {
       let removeFromOldShelf = this.state[book.shelf].filter(b => b.id !== book.id);
-      this.setState({[book.shelf]: removeFromOldShelf});
+      this.setState({ [book.shelf]: removeFromOldShelf });
     }
 
     //If book's new shelf exists, add to new shelf.
-    if(shelf !== 'none') {
+    if (shelf !== 'none') {
       book.shelf = shelf;
       let addToNewShelf = [...this.state[shelf], book];
-      this.setState({[shelf]: addToNewShelf});
+      this.setState({ [shelf]: addToNewShelf });
     }
 
     bookAPi.update(book, shelf);
@@ -70,10 +71,10 @@ class App extends Component {
           render={(props) =>
             <BookShelf
               {...props}
-              currentlyReading={this.state.currentlyReading} 
+              currentlyReading={this.state.currentlyReading}
               wantToRead={this.state.wantToRead}
               read={this.state.read}
-              shelfs = {this.validShelfs}
+              shelfs={this.validShelfs}
               changeShelf={this.changeShelf}
             />
           }
@@ -81,11 +82,20 @@ class App extends Component {
         <Route
           exact
           path="/search"
-          render={(props) => 
+          render={(props) =>
             <SearchPage
               {...props}
               changeShelf={this.changeShelf}
               bookIDs={this.getBookIDs()}
+            />
+          }
+        />
+        <Route
+          exact
+          path="/map"
+          render={(props) =>
+            <NeighbourhoodLibraries
+              {...props}
             />
           }
         />
