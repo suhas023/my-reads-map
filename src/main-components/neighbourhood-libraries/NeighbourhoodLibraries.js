@@ -4,7 +4,7 @@ import Map from './components/map/Map';
 import Error from './components/error/Error';
 import './NeighbourhoodLibraries.css';
 
-class App extends Component {
+class NeighbourhoodLibraries extends Component {
 
   constructor(props) {
     super(props);
@@ -91,4 +91,4 @@ class App extends Component {
   }
 }
 
-export default App;
+export default NeighbourhoodLibraries;
