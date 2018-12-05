@@ -1,0 +1,16 @@
+{
+  "main.css": "/my-reads-map/static/css/main.2b6a49ea.chunk.css",
+  "main.js": "/my-reads-map/static/js/main.a0192e70.chunk.js",
+  "main.js.map": "/my-reads-map/static/js/main.a0192e70.chunk.js.map",
+  "static/js/1.de03467c.chunk.js": "/my-reads-map/static/js/1.de03467c.chunk.js",
+  "static/js/1.de03467c.chunk.js.map": "/my-reads-map/static/js/1.de03467c.chunk.js.map",
+  "runtime~main.js": "/my-reads-map/static/js/runtime~main.b86c4fcb.js",
+  "runtime~main.js.map": "/my-reads-map/static/js/runtime~main.b86c4fcb.js.map",
+  "static/css/main.2b6a49ea.chunk.css.map": "/my-reads-map/static/css/main.2b6a49ea.chunk.css.map",
+  "static/media/BooksList.css": "/my-reads-map/static/media/arrow-drop-down.9d4e3f36.svg",
+  "static/media/SearchPage.css": "/my-reads-map/static/media/arrow-back.20e8847d.svg",
+  "static/media/BookShelf.css": "/my-reads-map/static/media/add.75d390e5.svg",
+  "index.html": "/my-reads-map/index.html",
+  "precache-manifest.8d425d5544cef349eb852ec75fedafd0.js": "/my-reads-map/precache-manifest.8d425d5544cef349eb852ec75fedafd0.js",
+  "service-worker.js": "/my-reads-map/service-worker.js"
+}
