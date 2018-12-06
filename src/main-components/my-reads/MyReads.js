@@ -63,7 +63,7 @@ class MyReads extends Component {
 
   render() {
     return (
-      <div className="App">
+      <div>
         <Route
           exact
           path='/'

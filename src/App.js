@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { Route } from 'react-router-dom';
 import MyReads from './main-components/my-reads/MyReads';
 import NeighbourhoodLibraries from './main-components/neighbourhood-libraries/NeighbourhoodLibraries';
+import './App.css';
 
 class App extends Component {
   render() {
