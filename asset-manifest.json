@@ -1,16 +1,16 @@
 {
-  "main.css": "/my-reads-map/static/css/main.d3e86b06.chunk.css",
-  "main.js": "/my-reads-map/static/js/main.4f9c4f19.chunk.js",
-  "main.js.map": "/my-reads-map/static/js/main.4f9c4f19.chunk.js.map",
-  "static/js/1.de03467c.chunk.js": "/my-reads-map/static/js/1.de03467c.chunk.js",
-  "static/js/1.de03467c.chunk.js.map": "/my-reads-map/static/js/1.de03467c.chunk.js.map",
+  "main.css": "/my-reads-map/static/css/main.501c17ca.chunk.css",
+  "main.js": "/my-reads-map/static/js/main.4e105920.chunk.js",
+  "main.js.map": "/my-reads-map/static/js/main.4e105920.chunk.js.map",
+  "static/js/1.aa68b088.chunk.js": "/my-reads-map/static/js/1.aa68b088.chunk.js",
+  "static/js/1.aa68b088.chunk.js.map": "/my-reads-map/static/js/1.aa68b088.chunk.js.map",
   "runtime~main.js": "/my-reads-map/static/js/runtime~main.b86c4fcb.js",
   "runtime~main.js.map": "/my-reads-map/static/js/runtime~main.b86c4fcb.js.map",
-  "static/css/main.d3e86b06.chunk.css.map": "/my-reads-map/static/css/main.d3e86b06.chunk.css.map",
+  "static/css/main.501c17ca.chunk.css.map": "/my-reads-map/static/css/main.501c17ca.chunk.css.map",
   "static/media/BooksList.css": "/my-reads-map/static/media/arrow-drop-down.9d4e3f36.svg",
   "static/media/SearchPage.css": "/my-reads-map/static/media/arrow-back.20e8847d.svg",
   "static/media/BookShelf.css": "/my-reads-map/static/media/add.75d390e5.svg",
   "index.html": "/my-reads-map/index.html",
-  "precache-manifest.0e1fae1eabc123677d5e06fe3f391881.js": "/my-reads-map/precache-manifest.0e1fae1eabc123677d5e06fe3f391881.js",
+  "precache-manifest.f10a16854d42514f643abff2b4ce48ae.js": "/my-reads-map/precache-manifest.f10a16854d42514f643abff2b4ce48ae.js",
   "service-worker.js": "/my-reads-map/service-worker.js"
 }
