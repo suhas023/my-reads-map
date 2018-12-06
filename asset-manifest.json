@@ -1,16 +1,16 @@
 {
-  "main.css": "/my-reads-map/static/css/main.c760d087.chunk.css",
-  "main.js": "/my-reads-map/static/js/main.762988ad.chunk.js",
-  "main.js.map": "/my-reads-map/static/js/main.762988ad.chunk.js.map",
+  "main.css": "/my-reads-map/static/css/main.ac60c098.chunk.css",
+  "main.js": "/my-reads-map/static/js/main.95789510.chunk.js",
+  "main.js.map": "/my-reads-map/static/js/main.95789510.chunk.js.map",
   "static/js/1.de03467c.chunk.js": "/my-reads-map/static/js/1.de03467c.chunk.js",
   "static/js/1.de03467c.chunk.js.map": "/my-reads-map/static/js/1.de03467c.chunk.js.map",
   "runtime~main.js": "/my-reads-map/static/js/runtime~main.b86c4fcb.js",
   "runtime~main.js.map": "/my-reads-map/static/js/runtime~main.b86c4fcb.js.map",
-  "static/css/main.c760d087.chunk.css.map": "/my-reads-map/static/css/main.c760d087.chunk.css.map",
+  "static/css/main.ac60c098.chunk.css.map": "/my-reads-map/static/css/main.ac60c098.chunk.css.map",
   "static/media/BooksList.css": "/my-reads-map/static/media/arrow-drop-down.9d4e3f36.svg",
   "static/media/SearchPage.css": "/my-reads-map/static/media/arrow-back.20e8847d.svg",
   "static/media/BookShelf.css": "/my-reads-map/static/media/add.75d390e5.svg",
   "index.html": "/my-reads-map/index.html",
-  "precache-manifest.eefea85c52b48e4a3ebf891b1bee643a.js": "/my-reads-map/precache-manifest.eefea85c52b48e4a3ebf891b1bee643a.js",
+  "precache-manifest.7cc0ee9d645bd38f76003ec8670abad1.js": "/my-reads-map/precache-manifest.7cc0ee9d645bd38f76003ec8670abad1.js",
   "service-worker.js": "/my-reads-map/service-worker.js"
 }
