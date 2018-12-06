@@ -4,12 +4,12 @@
   align-items: center;
   text-align: center;
   justify-content: center;
-  width: 200px;
-  height: 200px;
+  width: 260px;
   margin: 0px;
   font-size: 14px;
   color: black;
   font-weight: 400;
+  overflow: auto;
 }
 
 .info-window img {

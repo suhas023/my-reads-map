@@ -32,7 +32,7 @@ class Map extends Component {
       }
       let mapDOM = document.getElementById('map');
       this.map = new google.maps.Map(mapDOM, mapState);
-      this.infoWindow = new google.maps.InfoWindow({maxWidth: 200});
+      this.infoWindow = new google.maps.InfoWindow({maxWidth: 260, maxHeight:260});
       this.service = new google.maps.places.PlacesService(this.map);
       // deselect the library when infowindow is closed 
       google.maps.event.addListener(this.infoWindow, 'closeclick', () => {

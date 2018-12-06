@@ -36,10 +36,7 @@ class Marker extends Component {
         Open now: <Strong>${library.opening_hours ? library.opening_hours.open_now : 'N/A'}</strong>
       </span>
       <span>
-        <small>${library.formatted_address.slice(0, 50) + '...'}</small>
-      </span>
-      <span>
-        <small>Google Places</small>
+        <small>${library.formatted_address.slice(0, 60) + '...'}</small>
       </span>
     </div>
     `;
